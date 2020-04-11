@@ -1,0 +1,88 @@
+// Created by: Matheus Ribeiro Sant'Ana - RGM: 802.243 - Unigran/Dourados
+
+Algoritmo Trabalho - Calculadora // Nome do algoritmo.
+
+Declare // Declaração das variáveis.
+	sinal, verifica: caractere
+	a, b, c, result: real
+	i<-1: inteiro
+Início // Início da função principal. 
+	repita//Sequência de comandos a serem executados e repetidos.
+		escreva ("Escolha a opção");//Função escreva para mostrar ao usuário o menu.
+		escreva ("0 -  Sair");
+		escreva ("1 - Adição");
+		escreva ("2 - Subtração");
+		escreva ("3 - Multiplicação");
+		escreva ("4- Divisão");
+		escreva ("5 - Potenciação");
+		escreva ("A sua opção é: ");//Entrada da variável "sinal"
+			leia (sinal);//Leitura da variável "sinal"
+		se ((sinal=0) ou (sinal=1) ou (sinal=2) ou (sinal=3) ou (sinal=4) ou (sinal=5)) então//Condições 
+			limpa ( );//Função para limpar a tela
+			escolha (sinal)//Função escolha para escolher a variável "sinal"
+				caso 0:
+					retorne 0;// Retornar com valor 0 para fechar o programa.
+					interrompa;// Sair do comando escolha.
+				caso 1:// Leitura dos dados começa aqui para que algumas alterações sejam feitas.
+					escreva ("Adição!");// Como a tela foi limpa, isso irá orientar o usuário.
+					escreva ("Informe o primeiro operando: ");// Entrada do primeiro operando.
+						leia (a);// Leitura do primeiro operando.
+					escreva ("Informe o segundo operando: ");// Entrada do segundo operando.
+						leia (b);// Leitura do segundo operando.
+					result <- a+b;// Cálculo.
+					interrompa	;// Sair do comando escolha.
+				caso 2:
+					escreva ("Subtração!");//Como a tela foi limpa, isso irá orientar o usuário.
+					escreva ("Informe o primeiro operando: ");// Entrada do primeiro operando.
+						leia (a);// Leitura do primeiro operando.
+					escreva ("Informe o segundo operando: ");// Entrada do segundo operando.
+						leia (b);// Leitura do segundo operando.
+					result <- a-b;// Cálculo.
+					interrompa;// Sair do comando escolha.
+				caso 3:
+					escreva ("Multiplicação"!);//Como a tela foi limpa, isso irá orientar o usuário.
+					escreva ("Informe o primeiro operando: ");// Entrada do primeiro operando.
+						leia (a);// Leitura do primeiro operando.
+					escreva ("Informe o segundo operando: ");// Entrada do segundo operando.
+						leia (b);// Leitura do segundo operando.
+					result <- a*b;// Cálculo.
+					interrompa;// Sair do comando escolha.
+				caso 4:
+					escreva ("Divisão!");//Como a tela foi limpa, isso irá orientar o usuário.
+					escreva ("Informe o primeiro operando: ");// Entrada do primeiro operando.
+						leia (a);// Leitura do primeiro operando.
+					escreva ("Informe o segundo operando: ");// Entrada do segundo operando.
+						leia (b);// Leitura do segundo operando.
+					result <- a/b;// Cálculo.
+					interrompa	;// Sair do comando escolha.
+				caso 5:
+					escreva ("Potenciação!");//Como a tela foi limpa, isso irá orientar o usuário.
+					escreva ("Informe o primeiro operando: ");// Entrada do primeiro operando.
+						leia (a);// Leitura do primeiro operando.
+					escreva ("Informe o segundo operando: ");// Entrada do segundo operando.
+						leia (b);// Leitura do segundo operando.
+					c <- a;// Valor da variável "a" foi atribuído ao valor da variável "c"
+					enquanto (i < b) faça// Enquanto "i" for menor que "b" será executado.
+						a <- a*c;// Cálculo.
+						i < i +1;// Variável "i" atuando como o controlador.
+					fim enquanto;// Fim da função enquanto.
+					result <- a;	// Valor de "a" foi atribuído ao valor da variável "result".
+					interrompa	;// Sair do comando escolha.
+			fim escolha;// Fim do comando escolha
+			escreva ("Esse é o seu resultado: ", result);// Apresentação do resultado.
+			escreva ("Deseja continuar com outra operação? 'S' para sim 'N' para não = ");//Verificação 
+				leia (verifica);//Leitura da verificação.
+			se ((verifica='S') ou (verifica='s'));//Condições para o segundo se.
+				limpa ( );//Comando para limpar a tela.
+			fim se;//Fim da segunda estrutura se.
+		senão//Caso as condições da primeira estrutura se não sejam saciadas.
+			escreva ("Erro: Operador Inválido!");// Mensagem de erro.
+			pausa//Comando pausa
+			verifica <- 'S';// "s" é atribuído "verifica" para que possa saciar o comando de repetição.
+			limpa ( );//Comando para limpar a tela.
+		fim se;// Fim da primeira estrutura de condição se. 
+	até ((verifica='S') ou (verifica='s'));// Fim da função repita, com a condição para o comando de repetição.
+Fim algoritmo.// Fim da função princípal.
+				
+
+	
