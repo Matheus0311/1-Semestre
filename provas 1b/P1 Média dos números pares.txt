@@ -1,0 +1,20 @@
+Algoritmo P1 Média dos números pares
+
+Declare
+	N1, N2, cont: inteiro;// Declaração de variáveis do tipo inteira.
+	result: real;// Declaração de variáveis do tipo real.
+Início
+	cont <- 0;//Zerando a variável cont.
+	result <- 0;//Zerando a variável result.
+	repita//Irá repetir as operações.
+		escreva("Informe qualquer número e 0 para encerrar a operação: ");// Entrada de dados.
+			leia(N1);//Leitura de dados.
+		N2 <- N1 mod 2;// Cálculo.
+		se ((N1!=0) e (N2=0)) então//Condição
+			result <- result + N1;//Incrementar N1 na variável result.
+			cont <- cont + 1;// Incrementar mais 1 na variável cont.
+		fim se;
+	até(N1!=0);//A estrutura irá repetir até esse valor ser saciado.
+	result <- result / cont;// Cálculo para achar a média. 
+	escreva("A média dos números pares informados:", result);// Saída de dados.
+Fim Algoritmo.
