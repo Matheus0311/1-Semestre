@@ -4,12 +4,11 @@
 int main ()
 {
     setlocale(LC_ALL, "Portuguese");
-    int A[15], i, j=0, k=1;
+    int A[15], i, j=0;
     for (i=0; i<15; i++)
     {
-        printf("\nInforme o %dº número inteiro: ",k);
+        printf("\nInforme o %dÂº nÃºmero inteiro: ",i+1);
             scanf("%d", &A[i]);
-        k++;
     }
     for (i=0; i<15; i++)
     {
@@ -19,5 +18,5 @@ int main ()
         }
     }
 
-    printf("\nO total de vezes que o número 10 foi inserido foi de: %d veze(s).\n", j);
+    printf("\nO total de vezes que o nÃºmero 10 foi inserido foi de: %d veze(s).\n", j);
 }
