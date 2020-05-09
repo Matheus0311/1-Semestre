@@ -4,20 +4,17 @@
 int main ()
 {
     float A[20], B[20], C[10];
-    int i, j=1;
+    int i;
     setlocale(LC_ALL, "Portuguese");
     for (i=0; i<20; i++)
     {
-        printf("\nInforme o %dº número real para A: ", j);
+        printf("\nInforme o %dÂº nÃºmero real para A: ", i+1);
             scanf("%g", &A[i]);
-        j++;
     }
-    j=1;
     for (i=0; i<20; i++)
     {
-        printf("\nInforme o %dº número real para B: ", j);
+        printf("\nInforme o %dÂº nÃºmero real para B: ", i+1);
             scanf("%g", &B[i]);
-        j++;
     }
     for (i=0; i<10; i++)
     {
@@ -25,5 +22,5 @@ int main ()
     }
     system("cls");
     for (i=0; i<10; i++)
-        printf("\nA subtração de %g com %g é: %g", A[i], B[i], C[i]);
+        printf("\nA subtraÃ§Ã£o de %g com %g Ã©: %g", A[i], B[i], C[i]);
 }
