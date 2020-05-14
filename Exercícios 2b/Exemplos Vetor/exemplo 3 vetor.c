@@ -3,20 +3,17 @@
 #include <locale.h>
 int main ()
 {
-    int A[15], B[15], C[30], i, j=1;
+    int A[15], B[15], C[30], i;
     setlocale(LC_ALL, "Portuguese");
     for (i=0; i<15; i++)
     {
-        printf("\nInforme o %dº número inteiro para A: ", j);
+        printf("\nInforme o %dº número inteiro para A: ", i+1);
             scanf("%d", &A[i]);
-        j++;
     }
-    j=1;
     for (i=0; i<15; i++)
     {
-        printf("\nInforme o %dº número inteiro para B: ", j);
+        printf("\nInforme o %dº número inteiro para B: ", i+1);
             scanf("%d", &B[i]);
-        j++;
     }
     for (i=0; i<15; i++)
     {
@@ -27,10 +24,8 @@ int main ()
         C[i] = (B[i]);
     }
     system("cls");
-    j=1;
     for (i=0; i<30; i++)
     {
-        printf("\nO %dº número para C é: %d", j, C[i]);
-        j++;
+        printf("\nO %dº número para C é: %d", i+1, C[i]);
     }
 }

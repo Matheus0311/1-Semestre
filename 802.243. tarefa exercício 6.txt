@@ -1,0 +1,28 @@
+Algoritmo Exercício 6
+
+Declare
+	n: vetor [1..10] de inteiro;
+	i, cont, aux: inteiro;
+Início
+	para i <- 1 até 10 faça
+		escreva ("Informe 10 valores: ");
+			leia ( n[i] );
+		i <- i + 1;
+	fim para;
+	para i <- 1 até 10 faça
+		para cont < - i + 1 até 10 faça	// cont vai receber i + 1 até chegar em 10.
+			se ( n [i] > n [cont] ) então 	// se n[i] for maior que n[cont] 
+				aux <- n[i]; 	//aux vai pegar o valor de n[i]
+				n[i] <- n[cont];	// n[i] o valor de n[cont]
+				n[cont] <- aux;	// n[cont] o valor de aux
+			fim se;
+			cont <- cont + 1;
+		fim para 
+		i < - i+1;
+	fim para;
+	escreva ("Ordem Crescente: ");
+	para i <- 1 até 10 faça
+		escreva (" ", n[i]);
+		i <- i+1;
+	fim para;
+Fim algoritmo.

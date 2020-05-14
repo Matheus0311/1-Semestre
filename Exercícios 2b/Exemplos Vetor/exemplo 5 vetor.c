@@ -7,19 +7,17 @@ int main ()
     int A[15], B[15], i, j=1;
     for (i=0; i<15; i++)
     {
-        printf("\nInforme o %dº número inteiro: ",j);
+        printf("\nInforme o %dº número inteiro: ",i+1);
             scanf("%d", &A[i]);
-        j++;
     }
     for (i=0; i<15; i++)
     {
         B[i]= (A[i]*2);
     }
     system("cls");
-    j=1;
     for (i=0; i<15; i++)
     {
-        printf("\nO dobro do %dº número é:  %d = %d x 2\n", j, B[i], A[i]);
+        printf("\nO dobro do %dº número é:  %d = %d x 2\n", i+1, B[i], A[i]);
         j++;
     }
 }
